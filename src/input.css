@@ -7,5 +7,20 @@
 }
 
 body {
-   @apply font-poppins;
+   @apply font-poppins max-w-[1920px] mx-auto bg-black text-green-950 text-sm;
+}
+
+.nav-link{
+   @apply text-xl font-bold duration-300;
+}
+.nav-link:hover,
+.active{
+   @apply text-green-700;
+}
+
+.nav__icons__mobile li:hover a{
+   @apply border-green-700 duration-300
+}
+.nav__icons__mobile li:hover a{
+   @apply text-green-700 duration-300
 }

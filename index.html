@@ -16,50 +16,59 @@
     <title>Brewy</title>
   </head>
   <body>
-<header id="navbar">
-    <!-- HEADER -->
-    <nav>
-        
+    <header id="navbar" class="text-black">
+      <!-- HEADER -->
+      <nav class="max-w-[1920px]">
         <!-- Mobile Menu -->
-    <div class="">
-        <div class="">
-            <div class=""></div>
-            <div class="">
-                <img src="./assets/images/logo.png" alt="logo">
+        <div class="fixed w-full top-0 left-0 z-50" id="sticky-menu">
+          <div class="flex items-center justify-between h-24 px-5">
+            <!-- empty div -->
+            <div class="text-white flex-1"></div>
+            <div class="flex-1 grid place-items-center">
+              <img src="./assets/images/logo.png" alt="logo" class="w-20" />
             </div>
-            <div class="">
-               <div class="">
-                 <img src="./assets/images/logo_2.png" alt="logo">
-                 <div class="">
-<i class="ri-close-large-line"></i>
-                 </div>
-               </div>
-               <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
+            <div class="absolute top-0 right-[-100%] min-h-[70vh] w-full px-5 bg-white flex flex-col gap-5 duration-500 ease-out overflow-hidden" id="nav-menu">
+              <div class="flex items-center justify-between h-24">
+                <img src="./assets/images/logo_2.png" alt="logo" class="w-20" />
+                <div class="text-3xl cursor-pointer" id="closeicon">
+                  <i class="ri-close-large-line"></i>
+                </div>
+              </div>
+              <ul class="flex flex-col items-start gap-5">
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#fragrance" class="nav-link">Fragrance</a></li>
                 <li><a href="#quality" class="nav-link">Quality</a></li>
                 <li><a href="#products" class="nav-link">Products</a></li>
-               </ul>
-               <div class="">
-                <p>Follow us <span>-</span></p>
-                <ul>
-                    <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
-                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
-                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+              </ul>
+              <div class="flex items-center py-10">
+                <p class="font-bold">Follow us <span class="ml-3 mr-5">-</span></p>
+                <ul class="flex space-x-4 nav__icons__mobile">
+                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                  </li>
+                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                  </li>
+                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                  </li>
+                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                  </li>
                 </ul>
-               </div>
-               <div class="">
-                <img src="./assets/images/coffee_leaf.png" alt="bg-leaf">
-               </div>
+              </div>
+              <div class="absolute bottom-16 -right-5 -rotate-[30deg] opacity-20 pointer-events-none">
+                <img src="./assets/images/coffee_leaf.png" alt="bg-leaf" class="w-72" />
+              </div>
             </div>
-            <div class="">
-                <i class="ri-menu-4-line"></i>
+            <div class="flex-1 text-white text-3xl cursor-pointer text-right">
+              <i class="ri-menu-4-line"></i>
             </div>
+          </div>
         </div>
-    </div>
-</nav>
-</header>
+      </nav>
+    </header>
+    <script src="./src/main.js"></script>
   </body>
 </html>
