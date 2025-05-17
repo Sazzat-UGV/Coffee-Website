@@ -4,16 +4,14 @@
 
 @theme {
    --font-poppins: "Poppins", sans-serif;
-   
-   --container: {
-      center: true,
-      padding: {
-        DEFAULT: "1rem",
-        md: "2rem"
-      }
-   }
 }
 
+
+@layer components{
+  .container {
+    @apply  p-[1rem] md:p-[2rem];
+  }
+}
 body {
    @apply font-poppins max-w-[1920px] mx-auto bg-black text-green-950 text-sm;
 }
@@ -37,4 +35,16 @@ body {
 }
 .nav__icons li:hover a{
    @apply text-white duration-300
+}
+h1{
+   @apply text-white text-5xl font-bold md:text-7xl lg:text-[80px] xl:text-[100px];
+}
+h2{
+   @apply text-3xl font-bold md:text-5xl ;
+}
+h3{
+   @apply text-2xl font-bold ;
+}
+h4{
+   @apply text-base font-bold sm:text-lg;
 }
