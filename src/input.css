@@ -4,6 +4,14 @@
 
 @theme {
    --font-poppins: "Poppins", sans-serif;
+   
+   --container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem"
+      }
+   }
 }
 
 body {
@@ -11,14 +19,20 @@ body {
 }
 
 .nav-link{
-   @apply text-xl font-bold duration-300;
+   @apply text-xl font-bold duration-300 lg:text-base;
 }
 .nav-link:hover,
 .active{
    @apply text-green-700;
 }
 
-.nav__icons li:hover a{
+.nav__icons__mobile li:hover {
+   @apply border-green-700 duration-300
+}
+.nav__icons__mobile li:hover a{
+   @apply text-green-700 duration-300
+}
+.nav__icons li:hover {
    @apply border-white duration-300
 }
 .nav__icons li:hover a{
