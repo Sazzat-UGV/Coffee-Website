@@ -18,9 +18,9 @@ body {
    @apply text-green-700;
 }
 
-.nav__icons__mobile li:hover a{
-   @apply border-green-700 duration-300
+.nav__icons li:hover a{
+   @apply border-white duration-300
 }
-.nav__icons__mobile li:hover a{
-   @apply text-green-700 duration-300
+.nav__icons li:hover a{
+   @apply text-white duration-300
 }
