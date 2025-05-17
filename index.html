@@ -16,59 +16,94 @@
     <title>Brewy</title>
   </head>
   <body>
-    <header id="navbar" class="text-black">
+    <header id="navbar" class="text-black lg:text-white">
       <!-- HEADER -->
       <nav class="max-w-[1920px]">
         <!-- Mobile Menu -->
-        <div class="fixed w-full top-0 left-0 z-50" id="sticky-menu">
-          <div class="flex items-center justify-between h-24 px-5">
+        <div
+          class="fixed w-full top-0 left-0 z-50 lg:top-[-100%] duration-500"
+          id="sticky-menu"
+        >
+          <div
+            class="flex items-center justify-between h-24 px-5 md:px-10 lg:max-w-4xl lg:mx-auto"
+          >
             <!-- empty div -->
-            <div class="text-white flex-1"></div>
-            <div class="flex-1 grid place-items-center">
+            <div class="lg:hidden flex-1"></div>
+
+            <div class="flex-1 grid place-items-center lg:place-items-start">
               <img src="./assets/images/logo.png" alt="logo" class="w-20" />
             </div>
-            <div class="absolute top-0 right-[-100%] min-h-[70vh] w-full px-5 bg-white flex flex-col gap-5 duration-500 ease-out overflow-hidden" id="nav-menu">
-              <div class="flex items-center justify-between h-24">
+
+            <div
+              class="absolute top-0 min-h-[70vh] right-[-100%] w-full px-5 bg-white flex flex-col gap-5 duration-500 ease-out overflow-hidden md:px-10 lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+              id="nav-menu"
+            >
+              <div class="flex items-center justify-between h-24 lg:hidden">
                 <img src="./assets/images/logo_2.png" alt="logo" class="w-20" />
                 <div class="text-3xl cursor-pointer" id="closeicon">
                   <i class="ri-close-large-line"></i>
                 </div>
               </div>
-              <ul class="flex flex-col items-start gap-5">
+
+              <ul class="flex flex-col items-start gap-5 lg:flex-row">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#fragrance" class="nav-link">Fragrance</a></li>
                 <li><a href="#quality" class="nav-link">Quality</a></li>
                 <li><a href="#products" class="nav-link">Products</a></li>
               </ul>
-              <div class="flex items-center py-10">
-                <p class="font-bold">Follow us <span class="ml-3 mr-5">-</span></p>
+
+              <div class="flex items-center py-10 lg:hidden">
+                <p class="font-bold">
+                  Follow us <span class="ml-3 mr-5">-</span>
+                </p>
                 <ul class="flex space-x-4 nav__icons__mobile">
-                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
                     <a href="#"><i class="ri-twitter-x-line"></i></a>
                   </li>
-                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
                     <a href="#"><i class="ri-facebook-fill"></i></a>
                   </li>
-                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
                     <a href="#"><i class="ri-instagram-line"></i></a>
                   </li>
-                  <li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center" >
+                  <li
+                    class="border-2 border-black h-8 w-8 rounded-full grid place-items-center"
+                  >
                     <a href="#"><i class="ri-youtube-fill"></i></a>
                   </li>
                 </ul>
               </div>
-              <div class="absolute bottom-16 -right-5 -rotate-[30deg] opacity-20 pointer-events-none">
-                <img src="./assets/images/coffee_leaf.png" alt="bg-leaf" class="w-72" />
+
+              <div
+                class="absolute bottom-16 -right-5 -rotate-[30deg] opacity-20 pointer-events-none lg:hidden"
+              >
+                <img
+                  src="./assets/images/coffee_leaf.png"
+                  alt="bg-leaf"
+                  class="w-72"
+                />
               </div>
             </div>
-            <div class="flex-1 text-white text-3xl cursor-pointer text-right">
-              <i class="ri-menu-4-line"></i>
+
+            <div
+              class="flex-1 text-white text-3xl cursor-pointer text-right lg:hidden"
+            >
+              <i class="ri-menu-4-line" id="hamburger"></i>
             </div>
           </div>
         </div>
+        <!-- Desktop Menu -->
+        <div class="hidden lg:block py-4">desktop menuy</div>
       </nav>
     </header>
+    <main></main>
     <script src="./src/main.js"></script>
   </body>
 </html>
