@@ -101,7 +101,7 @@
         </div>
         <!-- Desktop Menu -->
         <div class="hidden lg:block py-4">
-          <div class="container mx-auto  flex items-center justify-center">
+          <div class="container mx-auto flex items-center justify-center">
             <div class="flex flex-1 items-center py-10">
               <p class="font-bold">
                 Follow us <span class="ml-3 mr-5">-</span>
@@ -161,7 +161,7 @@
                   <a href="#" class="text-green-700 relative"
                     ><i class="ri-shopping-bag-fill"></i>
                     <span
-                      class=" bg-white font-bold absolute -top-2 -right-6 text-black text-xs w-6 h-6 rounded-full grid place-items-center"
+                      class="bg-white font-bold absolute -top-2 -right-6 text-black text-xs w-6 h-6 rounded-full grid place-items-center"
                       >0</span
                     >
                   </a>
@@ -189,25 +189,190 @@
       </nav>
     </header>
     <main>
-      <!-- Homr -->
-      <div id="home" class="lg:-mt-72">
-        <div class="bg-[url(/assets/images/hero_bg.jpg)] bg-cover" >
-          <div class="container mx-auto pt-40 pb-[40%] flex flex-col justify-center items-center text-center gap-3 md:pb-[30%] lg:pt-72 lg:gap-5 lg:max-w-3xl lg:pb-[25%] xl:max-w-5xl xl:pb-[20%]">
-            <h1 class="!text-green-700">Organic</h1>
-            <h1>Colombian Coffee</h1>
-            <p class="text-white mt-5">
-              Experience the rich essence of Colombia with a coffee crafted to
-              perfection. Smooth and bold, each sip delivers a unique blend of
-              flavor and aroma that awakens your senses.
+      <!-- Home -->
+      <section id="home">
+        <div class="lg:-mt-[400px]">
+          <div class="bg-[url(/assets/images/hero_bg.jpg)] bg-cover">
+            <div
+              class="container mx-auto pt-40 pb-[40%] flex flex-col justify-center items-center text-center gap-3 md:pb-[30%] lg:pt-72 lg:gap-5 lg:max-w-3xl lg:pb-[25%] xl:max-w-5xl xl:pb-[20%]"
+            >
+              <h1 class="!text-green-700">Organic</h1>
+              <h1>Colombian Coffee</h1>
+              <p class="text-white mt-5">
+                Experience the rich essence of Colombia with a coffee crafted to
+                perfection. Smooth and bold, each sip delivers a unique blend of
+                flavor and aroma that awakens your senses.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative bg-green-800 bg-[url(/assets/images/coffee_pattern.png)] bg-repeat bg-[length:400px_400px]"
+          >
+            <div
+              class="relative w-full h-0 pb-[50%] md:pb-[45%] lg:pb-[35%] xl:pb-0 xl:h-[450px]"
+            >
+              <img
+                src="./assets/images/coffee-bean.png"
+                alt="coffee bean"
+                class="absolute -top-1/2 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] lg:w-[700px] xl:w-[750px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section
+        id="about"
+        class="container mx-auto flex flex-col gap-20 lg:flex-row"
+      >
+        <div class="lg:w-1/2">
+          <div class="flex flex-col text-center lg:text-start md:gap-2">
+            <h2 class="text-green-700">Caturra & Maragogipe</h2>
+            <h2>Boutique Plantation Coffee</h2>
+            <p class="mt-5">
+              The smooth richness of Organic Colombian Coffee is perfectly
+              balanced, offering a deep, bold flavor with a hint of sweetness.
+              Enjoy the harmonious blend that awakens your senses with every
+              sip.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2 py-10 lg:items-start">
+            <div class="flex items-center gap-5 font-bold">
+              <i class="ri-file-list-2-fill text-2xl text-green-700"></i>
+              <p>Download price</p>
+            </div>
+            <div class="flex items-center gap-5 font-bold">
+              <i class="ri-phone-fill text-2xl text-green-700"></i>
+              <p>1-780-854-68</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row xl:justify-start items-center justify-center gap-5"
+          >
+            <button class="btn_primary">
+              <span class="relative z-10">Read More</span>
+            </button>
+            <button class="btn_secondary">
+              <span class="relative z-10">Read More</span>
+            </button>
+          </div>
+        </div>
+        <div class="relative lg:w-1/2">
+          <img
+            src="./assets/images/about_image.png"
+            alt="about_image"
+            class="w-full mx-auto lg:w-full md:w-[80%] xl:w-[80%]"
+          />
+          <div
+            class="absolute top-0 left-0 bg-white shadow-2xl h-40 w-40 rounded-full grid place-items-center text-center border-2 border-r-green-900 md:left-[20%] lg:h-44 lg:w-44"
+          >
+            <div>
+              <h3>since</h3>
+              <h2 class="text-green-700">1955</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[url('/assets/images/bg_image.jpg')] bg-top bg-no-repeat relative bg-cover"
+      >
+        <div class="container mx-auto relative z-10">
+          <h3 class="max-w-5xl text-center mx-auto">
+            Experience the vibrant taste of Organic Colombian Coffee, crafted to
+            perfection with a
+            <span class="text-green-700">smooth finish and rich aroma</span>.
+            Its balanced notes offer a satisfying blend of flavor • and
+            freshness, making every cup truly exceptional
+          </h3>
+        </div>
+        <div class="mt-10 px-5 grid grid-col-1 gap-14 md:grid-cols-2 xl:grid-cols-4">
+          <div
+            class="about_item flex flex-col gap-3 items-center justify-center text-center"
+          >
+            <div class="about_item_image relative h-60 w-60">
+              <img
+                src="./assets/images/coffee-1.jpg"
+                alt="variety_image"
+                class="rounded-full"
+              />
+              <h3
+                class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+              >
+                01
+              </h3>
+            </div>
+            <h3>Arabica Green</h3>
+            <p>
+              Enjoy the smooth, full-bodied flavor of Organic Colombian Coffee,
+              perfectly balanced for a rich and satisfying experience.
+            </p>
+          </div>
+          <div
+            class="about_item flex flex-col gap-3 items-center justify-center text-center"
+          >
+            <div class="about_item_image relative h-60 w-60">
+              <img
+                src="./assets/images/coffee-2.jpg"
+                alt="variety_image"
+                class="rounded-full"
+              />
+              <h3
+                class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+              >
+                02
+              </h3>
+            </div>
+            <h3>Arabica Roasted</h3>
+            <p>
+              Enjoy the smooth, full-bodied flavor of Organic Colombian Coffee,
+              perfectly balanced for a rich and satisfying experience.
+            </p>
+          </div>
+          <div
+            class="about_item flex flex-col gap-3 items-center justify-center text-center"
+          >
+            <div class="about_item_image relative h-60 w-60">
+              <img
+                src="./assets/images/coffee-3.jpg"
+                alt="variety_image"
+                class="rounded-full"
+              />
+              <h3
+                class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+              >
+                03
+              </h3>
+            </div>
+            <h3>Robusta Roasted</h3>
+            <p>
+              Enjoy the smooth, full-bodied flavor of Organic Colombian Coffee,
+              perfectly balanced for a rich and satisfying experience.
+            </p>
+          </div>
+          <div
+            class="about_item flex flex-col gap-3 items-center justify-center text-center"
+          >
+            <div class="about_item_image relative h-60 w-60">
+              <img
+                src="./assets/images/coffee-4.jpg"
+                alt="variety_image"
+                class="rounded-full"
+              />
+              <h3
+                class="absolute -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white md:h-20 md:w-20 md:-left-10"
+              >
+                04
+              </h3>
+            </div>
+            <h3>Mixed Sorts</h3>
+            <p>
+              Enjoy the smooth, full-bodied flavor of Organic Colombian Coffee,
+              perfectly balanced for a rich and satisfying experience.
             </p>
           </div>
         </div>
-        <div class="relative bg-green-800 bg-[url(/assets/images/coffee_pattern.png)] bg-repeat bg-[length:400px_400px]">
-          <div class="relative w-full h-0 pb-[50%] md:pb-[45%] lg:pb-[35%] xl:pb-0 xl:h-[450px]">
-            <img src="./assets/images/coffee-bean.png" alt="coffee bean" class="absolute -top-1/2 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] lg:w-[700px] xl:w-[750px]">
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <script src="./src/main.js"></script>
   </body>
