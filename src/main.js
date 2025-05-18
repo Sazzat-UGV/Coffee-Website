@@ -29,3 +29,16 @@ const scrollHeader=()=>{
 }
 
 window.addEventListener('scroll',scrollHeader)
+
+const scrollUp=()=>{
+    const scrollUpButton=document.getElementById('scroll-up')
+    if(this.scrollY>=250){
+        scrollUpButton.classList.remove('-bottom-1/2')
+        scrollUpButton.classList.add('bottom-4')
+    }
+    else{
+        scrollUpButton.classList.add('-bottom-1/2')
+        scrollUpButton.classList.remove('bottom-4')
+    }
+}
+window.addEventListener('scroll' ,scrollUp);
