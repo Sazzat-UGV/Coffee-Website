@@ -14,6 +14,9 @@
     --color-green-800: oklch(44.8% 0.119 151.328);
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-green-950: oklch(26.6% 0.065 152.934);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -254,9 +257,6 @@
   .-bottom-1\/2 {
     bottom: calc(calc(1/2 * 100%) * -1);
   }
-  .-bottom-4 {
-    bottom: calc(var(--spacing) * -4);
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -304,6 +304,12 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .-mt-24 {
+    margin-top: calc(var(--spacing) * -24);
+  }
+  .-mt-\[100px\] {
+    margin-top: calc(100px * -1);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -746,6 +752,21 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .placeholder\:text-gray-300 {
+    &::placeholder {
+      color: var(--color-gray-300);
+    }
+  }
+  .placeholder\:text-gray-500 {
+    &::placeholder {
+      color: var(--color-gray-500);
+    }
+  }
+  .placeholder\:text-gray-700 {
+    &::placeholder {
+      color: var(--color-gray-700);
+    }
   }
   .hover\:-translate-y-1 {
     &:hover {
