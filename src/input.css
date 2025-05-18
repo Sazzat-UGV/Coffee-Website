@@ -12,8 +12,11 @@
     @apply  p-[1rem] md:p-[2rem];
   }
 }
+html{
+   @apply scroll-smooth;
+}
 body {
-   @apply font-poppins max-w-[1920px] mx-auto bg-white text-green-950 text-sm;
+   @apply font-poppins max-w-[1920px] mx-auto bg-white text-green-950 text-sm ;
 }
 
 section{
